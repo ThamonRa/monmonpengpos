@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Example</title>
+    <style>
+        body {
+            font-family: khmer os ;
+            background: #f3f0f7;
+            padding: 20px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .question {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .required {
+            color: red;
+        }
+        .option {
+            margin-bottom: 10px;
+        }
+        input[type="text"] {
+            border: none;
+            border-bottom: 1px solid #aaa;
+            outline: none;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="question">
+        សូមបញ្ចូលកម្រិតភាសាអង់គ្លេសរបស់អ្នក... <span class="required">*</span>
+    </div>
+
+    <div class="option">
+        <input type="radio" name="gender"> ល្អ
+    </div>
+    <div class="option">
+        <input type="radio" name="gender"> បធ្យម
+    </div>
+    <div class="option">
+        <input type="radio" name="gender"> គួរសម
+    </div>
+    <div class="option">
+        <input type="radio" name="gender"> ផ្សេងៗ
+    </div>
+</div>
+<div class="card">
+    <div class="question">
+        តើអ្នកធ្លាប់ប្រើប្រាស់កុំព្យូទ័រយូរប៉ុណ្ណា...? <span class="required">*</span>
+    </div>
+
+    <div class="option">
+        <input type="radio" name="experience"> 1 ឆ្នាំ
+    </div>
+    <div class="option">
+        <input type="radio" name="experience"> 3 ឆ្នាំ
+    </div>
+    <div class="option">
+        <input type="radio" name="experience"> 5 ឆ្នាំ
+    </div>
+    <div class="option">
+        <input type="radio" name="experience"> ផ្សេងៗ 
+        <input type="text" placeholder="សូមបញ្ជាក់">
+    </div>
+</div>
+<div class="card">
+    <div class="question">
+        សម្រាប់ម៉ោងសិក្សា ចន្ទ-សុក្រ មាន 2 វេន <span class="required">*</span>
+    </div>
+
+    <div class="option">
+        <input type="radio" name="time"> 9:30 - 10:30 នាទីយប់
+    </div>
+    <div class="option">
+        <input type="radio" name="time"> 10:40 - 11:40 នាទីយប់
+    </div>
+    <div class="option">
+        <input type="radio" name="time"> ផ្សេងៗ: 
+        <input type="text" placeholder="">
+    </div>
+</div>
+
+</body>
+</html>
